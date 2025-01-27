@@ -1,26 +1,8 @@
-import Link from 'next/link';
 import './style.css'
 
 export default function Home() {
   return (
     <>
-      <header>
-        <div className="logo">
-          <h1>UDigital</h1>
-          <p>Recursos Digitales Universitarios</p>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Recursos</a></li>
-            <li><a href="#">Contacto</a></li>
-            <Link href={'/login'}>
-              <li>Login</li>
-            </Link>
-          </ul>
-        </nav>
-      </header>
-
       <section className="hero">
         <h2>Bienvenido a UDigital</h2>
         <p>Accede fácilmente a todos los recursos digitales de tu universidad.</p>
