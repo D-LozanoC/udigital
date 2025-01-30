@@ -36,7 +36,12 @@ export default function Reset() {
             .then(response => response.json())
             .then(res => {
                 setMessage(res.message)
-                if (res.success){
+                if (res.success) {
+                    fetch('/api/account/history', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ action: 'Cambio de contraseña' })
+                    })
                     router.push('/auth/login')
                 }
             })

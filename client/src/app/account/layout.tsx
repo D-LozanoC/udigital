@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import './account.css'
+import './reserve.css'
 
 export default async function Account({ children, }: Readonly<{ children: React.ReactNode }>) {
     return (
@@ -18,6 +19,12 @@ export default async function Account({ children, }: Readonly<{ children: React.
                         </Link>
                         <Link href={'/account/history'}>
                             <li>Historial</li>
+                        </Link>
+                        <Link href={'/account/loan'}>
+                            <li>Tus prestamos</li>
+                        </Link>
+                        <Link href={'/account/reserve'}>
+                            <li>Tus reservas</li>
                         </Link>
                     </ul>
                 </aside>

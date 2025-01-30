@@ -13,7 +13,8 @@ export async function GET() {
             select: {
                 createdAt: true,
                 email: true,
-                username: true
+                username: true,
+                id: true
             }
         })
     }, { status: 200 })
